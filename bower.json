@@ -1,0 +1,29 @@
+{
+  "name": "green-board",
+  "version": "0.0.0",
+  "homepage": "https://github.com/LironHazan/green-board-with-koa",
+  "authors": [
+    "LironHazan <liron@gigaspaces.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "angular-bootstrap": "~0.14.2",
+    "lodash": "~3.10.1",
+    "angular-ui-router": "~0.2.15",
+    "d3": "~3.5.6"
+  }
+}

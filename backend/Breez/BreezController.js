@@ -20,9 +20,7 @@ module.exports.AirQualityIsraelToday = function *() {
     };
 
     var response = yield request(options);
-    var info = JSON.parse(response.body);
-    this.body = 'Air quality today in Israel: ' + info.breezometer_description;
-
+    this.body  = JSON.parse(response.body);
 };
 
 module.exports.getGit = function *() {

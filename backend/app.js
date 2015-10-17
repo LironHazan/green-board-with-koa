@@ -14,9 +14,8 @@ var breez = require('./Breez');
 var git = require('./Git');
 
 // route middleware
-app.use(route.get('/breez', breez.controller.AirQualityIsraelToday)); // routing to /breez will call the list function
-app.use(route.get('/git', git.controller.getGit));
-
+app.use(route.get('/backend/breez', breez.controller.AirQualityIsraelToday)); // routing to /breez will call the list function
+app.use(route.get('/backend/git', git.controller.getGit));
 
 
 module.exports = app;
