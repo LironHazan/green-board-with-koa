@@ -1,5 +1,7 @@
 generators-practice
 node_modules
-server/conf.json
+backend/conf.json
 .idea
 bower_components
+logs
+Green-Board-With-Koa.iml
