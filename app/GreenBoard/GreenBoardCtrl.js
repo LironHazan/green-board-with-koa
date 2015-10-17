@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('GreenBoard').controller('GreenBoardCtrl', function (BreezBoardService, GitBoardService, $scope) {
+angular.module('GreenBoard').controller('GreenBoardCtrl', function (BreezBoardService, GitBoardService, $scope, $uibModal) {
 
 
 
@@ -40,6 +40,27 @@ angular.module('GreenBoard').controller('GreenBoardCtrl', function (BreezBoardSe
     function changeBreezColor(element, color){
         angular.element(element).css('color',color);
     }
+
+
+
+    $scope.open = function () {
+
+        $uibModal.open({
+            animation: $scope.animationsEnabled,
+            templateUrl: 'GreenBoard/GitBoard/Login/LoginModal.html',
+            controller: 'LoginCtrl',
+            windowClass: 'center-modal',
+            size: 'sm',
+            resolve: {
+                item: function () {
+                    return $scope.item;
+                }
+            }
+        });
+        $scope.toggleAnimation = function () {
+            $scope.animationsEnabled = !$scope.animationsEnabled;
+        };
+    };
 });
 
 
