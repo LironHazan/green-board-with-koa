@@ -1,8 +1,9 @@
 #Green-Board-With-KOA
 
-## KOA - Angular web application
+### KOA - Angular web application
+
  
-### How to use:
+#### How to use:
 
 * clone project 
 * run npm install 
