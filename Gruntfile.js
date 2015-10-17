@@ -1,7 +1,7 @@
 /**
  * Created by liron on 10/17/15.
  */
-// Generated on 2014-12-28 using generator-angular 0.10.0
+
 'use strict';
 
 module.exports = function (grunt) {
