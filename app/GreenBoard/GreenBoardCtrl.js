@@ -16,6 +16,7 @@ angular.module('GreenBoard').controller('GreenBoardCtrl', function (BreezBoardSe
         changeBreezColor('.description-color', breezObject.breezometer_color);
         $scope.breezometer_description = breezObject.breezometer_description;
 
+       // changeBreezColor('.dynamic-text', breezObject.breezometer_color)
         $scope.children = breezObject.random_recommendations.children;
         $scope.health = breezObject.random_recommendations.health;
         $scope.inside = breezObject.random_recommendations.inside;
