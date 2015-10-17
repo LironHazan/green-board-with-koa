@@ -3,7 +3,7 @@
  */
 
 var github = require('octonode');
-var co = require('co');
+//var co = require('co');
 var path = require('path');
 //var config = require(path.join(__dirname, '../conf'));
 

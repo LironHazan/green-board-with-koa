@@ -1,7 +1,7 @@
 'use strict';
 
 var http = require('http');
-var app = require('./server/app');
+var app = require('./backend/app');
 
 app.on('error', function(err){
   log.error('server error', err);
