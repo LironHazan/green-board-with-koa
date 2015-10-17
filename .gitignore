@@ -3,3 +3,6 @@ node_modules
 backend/conf.json
 .idea
 bower_components
+logs
+Green-Board-With-Koa.iml
+
