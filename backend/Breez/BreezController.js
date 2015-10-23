@@ -23,7 +23,4 @@ module.exports.AirQualityIsraelToday = function *() {
     this.body  = JSON.parse(response.body);
 };
 
-module.exports.getGit = function *() {
-    this.body = yield gitHandler.login(config.git.token);
-};
 

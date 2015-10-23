@@ -3,10 +3,11 @@
  */
 'use strict';
 
-angular.module('GreenBoard').controller('GreenBoardCtrl', function (BreezBoardService, GitBoardService, $scope, $uibModal) {
+angular.module('GreenBoard').controller('GreenBoardCtrl', function (BreezBoardService, GitBoardService, $scope, $uibModal, GitLoginService) {
 
 
 
+    //todo: use breezBoardCtrl instead
     BreezBoardService.getBreezInIsrael().success(function(breezObject) {
         console.log(breezObject);
 
@@ -28,13 +29,9 @@ angular.module('GreenBoard').controller('GreenBoardCtrl', function (BreezBoardSe
         console.log(err);
     });
 
+    //todo user gitBoardCtrl instead
+    //GitLoginService.login
 
-    GitBoardService.getGitUserData().success(function(gitObj) {
-        console.log(gitObj);
-
-    }).error(function(err) {
-        console.log(err);
-    });
 
 
     function changeBreezColor(element, color){
@@ -48,7 +45,7 @@ angular.module('GreenBoard').controller('GreenBoardCtrl', function (BreezBoardSe
         $uibModal.open({
             animation: $scope.animationsEnabled,
             templateUrl: 'GreenBoard/GitBoard/Login/LoginModal.html',
-            controller: 'LoginCtrl',
+            controller: 'GitLoginCtrl',
             windowClass: 'center-modal',
             size: 'sm',
             resolve: {

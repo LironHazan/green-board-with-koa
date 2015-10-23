@@ -1,7 +1,7 @@
 /**
  * Created by liron on 10/17/15.
  */
-angular.module('GreenBoard').controller('LoginCtrl', function ( $scope, item, $modalInstance, $log, LoginService) {
+angular.module('GreenBoard').controller('GitLoginCtrl', function ( $scope, item, $modalInstance, $log, GitLoginService) {
 //modal
 
     $scope.item = item;
@@ -11,7 +11,7 @@ angular.module('GreenBoard').controller('LoginCtrl', function ( $scope, item, $m
 
         if ($scope.item && $scope.item.email && $scope.item.passwd) {
            // $scope.isLogin = true;
-            LoginService.login({email:$scope.item.email, passwd:$scope.item.passwd}).then( function success (){
+            GitLoginService.login({email:$scope.item.email, passwd:$scope.item.passwd}).then( function success (){
 
             }, function error(err){
               //  $scope.isLogin = false;

@@ -3,17 +3,17 @@
  */
 
 'use strict';
-angular.module('GreenBoard').service('LoginService', function ( $http ) {
+angular.module('GreenBoard').service('GitLoginService', function ( $http ) {
 
 
     function login(userDetails){
 
-        return $http.post('/backend/session/login', userDetails);
+        return $http.post('/backend/git/login', userDetails);
     }
 
 
     function logout(){
-        return $http.get('/backend/session/logout');
+        return $http.get('/backend/git/logout');
     }
     this.login = login;
     this.logout = logout;
