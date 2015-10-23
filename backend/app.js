@@ -6,16 +6,17 @@
 
 var koa = require('koa');
 var app = koa();
+var router = require('./routes'); //external file where all my routes
+var session = require('koa-session');// cookie-based session middleware
+
 var logger = require('koa-logger');
 app.use(logger());
 
-var route = require('koa-route');
-var breez = require('./Breez');
-var git = require('./Git');
+app.keys = ['secret!'];
+app.use(session(app));
 
-// route middleware
-app.use(route.get('/backend/breez', breez.controller.AirQualityIsraelToday)); // routing to /breez will call the list function
-app.use(route.get('/backend/git', git.controller.getGit));
+app.use(router.routes());
+app.use(router.allowedMethods());
 
 
 module.exports = app;
