@@ -1,0 +1,19 @@
+<div class="container" ng-controller="BreezCtrl">
+    <h6>This board uses data from breezometer api</h6>
+    <h2 class="country-header-color"> {{country_name}} </h2>
+    <h5 class="description-color">{{breezometer_description}}</h5>
+    <table class="table table-striped">
+        <tr class="info">
+            <th> Children</th>
+            <th> Health</th>
+            <th> Inside</th>
+            <th> Outside</th>
+        </tr>
+        <tr class="dynamic-text">
+            <td>{{children}}</td>
+            <td> {{health}}</td>
+            <td> {{inside}}</td>
+            <td> {{outside}}</td>
+        </tr>
+    </table>
+</div>
