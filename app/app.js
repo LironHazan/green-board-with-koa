@@ -4,6 +4,7 @@ angular
 	.module('green-board-app', [
 		'ui.router',
 		'ui.bootstrap',
+		'ngStorage',
 		'GreenBoard'
 	])
 	.config(function ($stateProvider, $urlRouterProvider, $httpProvider) {
