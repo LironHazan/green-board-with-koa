@@ -2,7 +2,8 @@
 
 angular.module('GreenBoard', [
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ngStorage' //localStorage
 ]);
 
 
