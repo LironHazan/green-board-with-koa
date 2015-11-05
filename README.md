@@ -1,4 +1,4 @@
-* forked from LironHazan to switch bootstrap in material
+* forked from LironHazan to switch bootstrap in angular material
 
 #Green-Board-With-KOA
 
